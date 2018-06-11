@@ -1,0 +1,344 @@
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.csprojResolveAssemblyReference.cache
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Properties.Resources.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.csproj.GenerateResource.Cache
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.exe.licenses
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\BoatManagement.exe
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\BoatManagement.pdb
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.BonusSkins.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Data.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Map.v16.2.Core.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Printing.v16.2.Core.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Sparkline.v16.2.Core.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Utils.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraBars.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraEditors.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraGrid.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraLayout.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraMap.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraPrinting.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.RichEdit.v16.2.Core.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraTreeList.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Office.v16.2.Core.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Data.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Map.v16.2.Core.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Utils.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Sparkline.v16.2.Core.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraBars.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraEditors.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraGrid.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraLayout.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraMap.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraPrinting.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.RichEdit.v16.2.Core.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraTreeList.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Office.v16.2.Core.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Map.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Map.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Map.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Map.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Utils.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Utils.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Utils.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Utils.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Sparkline.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Sparkline.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Sparkline.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Sparkline.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraBars.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraBars.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraBars.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraBars.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraEditors.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraEditors.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraEditors.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraEditors.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraLayout.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraLayout.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraLayout.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraLayout.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraPrinting.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraPrinting.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraPrinting.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraPrinting.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.RichEdit.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.RichEdit.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.RichEdit.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.RichEdit.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraTreeList.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraTreeList.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraTreeList.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraTreeList.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Office.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Office.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Office.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Office.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.exe
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.pdb
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.Boat.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Main.resources
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.exe
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.pdb
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.csprojResolveAssemblyReference.cache
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Form1.resources
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.Boat.resources
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Main.resources
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Properties.Resources.resources
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.csproj.GenerateResource.Cache
+F:\BoatManagement\BoatManagement\obj\Debug\BoatManagement.exe.licenses
+F:\BoatManagement\BoatManagement\bin\Debug\BoatManagement.exe.config
+F:\BoatManagement\BoatManagement\bin\Debug\BoatManagement.exe
+F:\BoatManagement\BoatManagement\bin\Debug\BoatManagement.pdb
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.BonusSkins.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Data.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Map.v16.2.Core.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Printing.v16.2.Core.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Sparkline.v16.2.Core.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Utils.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraBars.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraEditors.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraGrid.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraLayout.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraMap.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraPrinting.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.RichEdit.v16.2.Core.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraTreeList.v16.2.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Office.v16.2.Core.dll
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Data.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Map.v16.2.Core.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Utils.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Sparkline.v16.2.Core.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraBars.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraEditors.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraGrid.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraLayout.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraMap.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraPrinting.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.RichEdit.v16.2.Core.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraTreeList.v16.2.xml
+F:\BoatManagement\BoatManagement\bin\Debug\DevExpress.Office.v16.2.Core.xml
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Map.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Map.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Map.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Map.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Utils.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Utils.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Utils.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Utils.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Sparkline.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Sparkline.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Sparkline.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Sparkline.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraBars.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraBars.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraBars.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraBars.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraEditors.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraEditors.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraEditors.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraEditors.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraGrid.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraGrid.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraGrid.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraGrid.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraLayout.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraLayout.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraLayout.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraLayout.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraPrinting.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraPrinting.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraPrinting.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraPrinting.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.RichEdit.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.RichEdit.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.RichEdit.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.RichEdit.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraTreeList.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraTreeList.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraTreeList.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraTreeList.v16.2.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Office.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Office.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Office.v16.2.Core.resources.dll
+F:\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Office.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\BoatManagement.exe.config
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.exe
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.pdb
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.Boat.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Main.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Properties.Resources.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.exe.licenses
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\BoatManagement.exe
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\BoatManagement.pdb
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.BonusSkins.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Data.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Map.v16.2.Core.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Printing.v16.2.Core.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Sparkline.v16.2.Core.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Utils.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraBars.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraEditors.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraGrid.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraLayout.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraMap.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraPrinting.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Pdf.v16.2.Core.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.RichEdit.v16.2.Core.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraTreeList.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Office.v16.2.Core.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Data.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Map.v16.2.Core.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Printing.v16.2.Core.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Utils.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Sparkline.v16.2.Core.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraBars.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraEditors.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraGrid.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraLayout.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraMap.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraPrinting.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Pdf.v16.2.Core.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.RichEdit.v16.2.Core.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraTreeList.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Office.v16.2.Core.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Data.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Data.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Data.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Data.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Map.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Map.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Map.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Map.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Printing.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Utils.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Utils.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Utils.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Utils.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Sparkline.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Sparkline.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Sparkline.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Sparkline.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraBars.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraBars.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraBars.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraBars.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraEditors.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraEditors.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraEditors.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraEditors.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraLayout.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraLayout.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraLayout.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraLayout.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraPrinting.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraPrinting.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraPrinting.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraPrinting.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Pdf.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.RichEdit.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.RichEdit.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.RichEdit.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.RichEdit.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraTreeList.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraTreeList.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraTreeList.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraTreeList.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Office.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Office.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Office.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Office.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.BoatAreActive.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.NowPosition.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Diagram.v16.2.Core.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraDiagram.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraVerticalGrid.v16.2.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.Diagram.v16.2.Core.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraDiagram.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraVerticalGrid.v16.2.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Diagram.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Diagram.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Diagram.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Diagram.v16.2.Core.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.National.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.FrmJourney.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.UpdatePosition.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.FrmPortManagement.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.StatisticsByOcean.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.StatisticsByTypeBoat.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.StatisticsByNational.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Login.resources
+C:\Users\Administrator\Desktop\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.BoatLostInfor.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\BoatManagement.exe.config
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Diagram.v16.2.Core.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraDiagram.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraVerticalGrid.v16.2.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.Diagram.v16.2.Core.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraDiagram.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\DevExpress.XtraVerticalGrid.v16.2.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.Diagram.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.Diagram.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.Diagram.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.Diagram.v16.2.Core.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\de\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\es\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ja\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\bin\Debug\ru\DevExpress.XtraVerticalGrid.v16.2.resources.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.BoatAreActive.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.BoatLostInfor.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.FrmJourney.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.FrmPortManagement.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.National.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.StatisticsByNational.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.StatisticsByOcean.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.StatisticsByTypeBoat.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.UpdatePosition.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Login.resources

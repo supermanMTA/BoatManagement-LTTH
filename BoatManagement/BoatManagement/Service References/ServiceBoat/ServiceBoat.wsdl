@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAllBoat">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllBoatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllBoatResult" type="tns:ArrayOfBoat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBoat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Boat" nillable="true" type="tns:Boat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Boat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MMSI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDNational" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDTypeBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Volume" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tonnage" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="High" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Length" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="National" type="tns:National" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeBoat" type="tns:TypeBoat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="National">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TypeBoat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBoat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdBoat" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBoatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBoatResult" type="tns:Boat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNational">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdNational" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNationalResult" type="tns:National" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllNational">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllNationalResult" type="tns:ArrayOfNational" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNational">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="National" nillable="true" type="tns:National" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllType">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTypeResult" type="tns:ArrayOfTypeBoat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTypeBoat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TypeBoat" nillable="true" type="tns:TypeBoat" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTypeBoat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdtypeBoat" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTypeBoatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTypeBoatResult" type="tns:TypeBoat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BoatAreActive">
+        <s:complexType />
+      </s:element>
+      <s:element name="BoatAreActiveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BoatAreActiveResult" type="tns:ArrayOfBoatActive" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBoatActive">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BoatActive" type="tns:BoatActive" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BoatActive">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longiude" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latiude" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDPosition" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Time" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_Journey" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AllBoatLostInfor">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllBoatLostInforResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AllBoatLostInforResult" type="tns:ArrayOfBoatLostInfor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBoatLostInfor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BoatLostInfor" nillable="true" type="tns:BoatLostInfor" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BoatLostInfor">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastConnect" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDJourney" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertboat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mmsi" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idnational" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idtypeboat" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="volume" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="tonnage" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="high" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="length" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertboatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertboatResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBoat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idBoat" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mmsi" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idnational" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idtypeboat" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="volume" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="tonnage" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="high" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="length" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBoatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateBoatResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBoat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idBoat" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBoatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteBoatResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CountBoat">
+        <s:complexType />
+      </s:element>
+      <s:element name="CountBoatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CountBoatResult" type="tns:ArrayOfSati" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSati">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Sati" type="tns:Sati" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Sati">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="National" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllBoatSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllBoat" />
+  </wsdl:message>
+  <wsdl:message name="GetAllBoatSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllBoatResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBoatSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBoat" />
+  </wsdl:message>
+  <wsdl:message name="GetBoatSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBoatResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNational" />
+  </wsdl:message>
+  <wsdl:message name="GetNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllNational" />
+  </wsdl:message>
+  <wsdl:message name="GetAllNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllType" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTypeBoatSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTypeBoat" />
+  </wsdl:message>
+  <wsdl:message name="GetTypeBoatSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTypeBoatResponse" />
+  </wsdl:message>
+  <wsdl:message name="BoatAreActiveSoapIn">
+    <wsdl:part name="parameters" element="tns:BoatAreActive" />
+  </wsdl:message>
+  <wsdl:message name="BoatAreActiveSoapOut">
+    <wsdl:part name="parameters" element="tns:BoatAreActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="AllBoatLostInforSoapIn">
+    <wsdl:part name="parameters" element="tns:AllBoatLostInfor" />
+  </wsdl:message>
+  <wsdl:message name="AllBoatLostInforSoapOut">
+    <wsdl:part name="parameters" element="tns:AllBoatLostInforResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertboatSoapIn">
+    <wsdl:part name="parameters" element="tns:insertboat" />
+  </wsdl:message>
+  <wsdl:message name="insertboatSoapOut">
+    <wsdl:part name="parameters" element="tns:insertboatResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBoatSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBoat" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBoatSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBoatResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBoatSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteBoat" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBoatSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteBoatResponse" />
+  </wsdl:message>
+  <wsdl:message name="CountBoatSoapIn">
+    <wsdl:part name="parameters" element="tns:CountBoat" />
+  </wsdl:message>
+  <wsdl:message name="CountBoatSoapOut">
+    <wsdl:part name="parameters" element="tns:CountBoatResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceBoatSoap">
+    <wsdl:operation name="GetAllBoat">
+      <wsdl:input message="tns:GetAllBoatSoapIn" />
+      <wsdl:output message="tns:GetAllBoatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBoat">
+      <wsdl:input message="tns:GetBoatSoapIn" />
+      <wsdl:output message="tns:GetBoatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNational">
+      <wsdl:input message="tns:GetNationalSoapIn" />
+      <wsdl:output message="tns:GetNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNational">
+      <wsdl:input message="tns:GetAllNationalSoapIn" />
+      <wsdl:output message="tns:GetAllNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllType">
+      <wsdl:input message="tns:GetAllTypeSoapIn" />
+      <wsdl:output message="tns:GetAllTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeBoat">
+      <wsdl:input message="tns:GetTypeBoatSoapIn" />
+      <wsdl:output message="tns:GetTypeBoatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BoatAreActive">
+      <wsdl:input message="tns:BoatAreActiveSoapIn" />
+      <wsdl:output message="tns:BoatAreActiveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllBoatLostInfor">
+      <wsdl:input message="tns:AllBoatLostInforSoapIn" />
+      <wsdl:output message="tns:AllBoatLostInforSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertboat">
+      <wsdl:input message="tns:insertboatSoapIn" />
+      <wsdl:output message="tns:insertboatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBoat">
+      <wsdl:input message="tns:UpdateBoatSoapIn" />
+      <wsdl:output message="tns:UpdateBoatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoat">
+      <wsdl:input message="tns:DeleteBoatSoapIn" />
+      <wsdl:output message="tns:DeleteBoatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CountBoat">
+      <wsdl:input message="tns:CountBoatSoapIn" />
+      <wsdl:output message="tns:CountBoatSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceBoatSoap" type="tns:ServiceBoatSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllBoat">
+      <soap:operation soapAction="http://tempuri.org/GetAllBoat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBoat">
+      <soap:operation soapAction="http://tempuri.org/GetBoat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNational">
+      <soap:operation soapAction="http://tempuri.org/GetNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNational">
+      <soap:operation soapAction="http://tempuri.org/GetAllNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllType">
+      <soap:operation soapAction="http://tempuri.org/GetAllType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeBoat">
+      <soap:operation soapAction="http://tempuri.org/GetTypeBoat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BoatAreActive">
+      <soap:operation soapAction="http://tempuri.org/BoatAreActive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllBoatLostInfor">
+      <soap:operation soapAction="http://tempuri.org/AllBoatLostInfor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertboat">
+      <soap:operation soapAction="http://tempuri.org/insertboat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBoat">
+      <soap:operation soapAction="http://tempuri.org/UpdateBoat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoat">
+      <soap:operation soapAction="http://tempuri.org/DeleteBoat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountBoat">
+      <soap:operation soapAction="http://tempuri.org/CountBoat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceBoatSoap12" type="tns:ServiceBoatSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllBoat">
+      <soap12:operation soapAction="http://tempuri.org/GetAllBoat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBoat">
+      <soap12:operation soapAction="http://tempuri.org/GetBoat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNational">
+      <soap12:operation soapAction="http://tempuri.org/GetNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNational">
+      <soap12:operation soapAction="http://tempuri.org/GetAllNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllType">
+      <soap12:operation soapAction="http://tempuri.org/GetAllType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypeBoat">
+      <soap12:operation soapAction="http://tempuri.org/GetTypeBoat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BoatAreActive">
+      <soap12:operation soapAction="http://tempuri.org/BoatAreActive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllBoatLostInfor">
+      <soap12:operation soapAction="http://tempuri.org/AllBoatLostInfor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertboat">
+      <soap12:operation soapAction="http://tempuri.org/insertboat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBoat">
+      <soap12:operation soapAction="http://tempuri.org/UpdateBoat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoat">
+      <soap12:operation soapAction="http://tempuri.org/DeleteBoat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountBoat">
+      <soap12:operation soapAction="http://tempuri.org/CountBoat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceBoat">
+    <wsdl:port name="ServiceBoatSoap" binding="tns:ServiceBoatSoap">
+      <soap:address location="http://localhost:50578/ServiceBoat.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceBoatSoap12" binding="tns:ServiceBoatSoap12">
+      <soap12:address location="http://localhost:50578/ServiceBoat.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

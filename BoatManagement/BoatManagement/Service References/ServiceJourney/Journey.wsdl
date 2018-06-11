@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LoadJourney">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoadJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadJourneyResult" type="tns:ArrayOfJourney" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfJourney">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Journey" nillable="true" type="tns:Journey" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Journey">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BeginPosition" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndPosition" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeProvide" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeBegin" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeEnd" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Boat" type="tns:Boat" />
+          <s:element minOccurs="0" maxOccurs="1" name="Port" type="tns:Port" />
+          <s:element minOccurs="0" maxOccurs="1" name="Port1" type="tns:Port" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Boat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MMSI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDNational" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDTypeBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Volume" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tonnage" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="High" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Length" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="National" type="tns:National" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeBoat" type="tns:TypeBoat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="National">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TypeBoat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Port">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_Nation" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoadJourneyActive">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoadJourneyActiveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadJourneyActiveResult" type="tns:ArrayOfJourney" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IDBoat" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTripResult" type="tns:ArrayOfJourney" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPort">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllPortResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPortResult" type="tns:ArrayOfPort" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPort">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Port" nillable="true" type="tns:Port" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTripId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idtrip" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTripIdResult" type="tns:Journey" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="inserttrip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Idboat" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginposition" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="endposition" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="timeprovide" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="timebegin" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="timeend" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="inserttripResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="inserttripResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTrip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTrip" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Idboat" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginposition" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="endposition" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="timeprovide" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="timebegin" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="timeend" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTripResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTripResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoadJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:LoadJourney" />
+  </wsdl:message>
+  <wsdl:message name="LoadJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:LoadJourneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadJourneyActiveSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadJourneyActive" />
+  </wsdl:message>
+  <wsdl:message name="LoadJourneyActiveSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadJourneyActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTripSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrip" />
+  </wsdl:message>
+  <wsdl:message name="GetTripSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTripResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPortSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPort" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPortSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPortResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTripIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTripId" />
+  </wsdl:message>
+  <wsdl:message name="GetTripIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTripIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="inserttripSoapIn">
+    <wsdl:part name="parameters" element="tns:inserttrip" />
+  </wsdl:message>
+  <wsdl:message name="inserttripSoapOut">
+    <wsdl:part name="parameters" element="tns:inserttripResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTripSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTrip" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTripSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTripResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Journey1Soap">
+    <wsdl:operation name="LoadJourney">
+      <wsdl:input message="tns:LoadJourneySoapIn" />
+      <wsdl:output message="tns:LoadJourneySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadJourneyActive">
+      <wsdl:input message="tns:LoadJourneyActiveSoapIn" />
+      <wsdl:output message="tns:LoadJourneyActiveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrip">
+      <wsdl:input message="tns:GetTripSoapIn" />
+      <wsdl:output message="tns:GetTripSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPort">
+      <wsdl:input message="tns:GetAllPortSoapIn" />
+      <wsdl:output message="tns:GetAllPortSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripId">
+      <wsdl:input message="tns:GetTripIdSoapIn" />
+      <wsdl:output message="tns:GetTripIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="inserttrip">
+      <wsdl:input message="tns:inserttripSoapIn" />
+      <wsdl:output message="tns:inserttripSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrip">
+      <wsdl:input message="tns:UpdateTripSoapIn" />
+      <wsdl:output message="tns:UpdateTripSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Journey1Soap" type="tns:Journey1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadJourney">
+      <soap:operation soapAction="http://tempuri.org/LoadJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadJourneyActive">
+      <soap:operation soapAction="http://tempuri.org/LoadJourneyActive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrip">
+      <soap:operation soapAction="http://tempuri.org/GetTrip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPort">
+      <soap:operation soapAction="http://tempuri.org/GetAllPort" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripId">
+      <soap:operation soapAction="http://tempuri.org/GetTripId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserttrip">
+      <soap:operation soapAction="http://tempuri.org/inserttrip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrip">
+      <soap:operation soapAction="http://tempuri.org/UpdateTrip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Journey1Soap12" type="tns:Journey1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadJourney">
+      <soap12:operation soapAction="http://tempuri.org/LoadJourney" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadJourneyActive">
+      <soap12:operation soapAction="http://tempuri.org/LoadJourneyActive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrip">
+      <soap12:operation soapAction="http://tempuri.org/GetTrip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPort">
+      <soap12:operation soapAction="http://tempuri.org/GetAllPort" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripId">
+      <soap12:operation soapAction="http://tempuri.org/GetTripId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="inserttrip">
+      <soap12:operation soapAction="http://tempuri.org/inserttrip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrip">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTrip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Journey1">
+    <wsdl:port name="Journey1Soap" binding="tns:Journey1Soap">
+      <soap:address location="http://localhost:50578/Journey.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Journey1Soap12" binding="tns:Journey1Soap12">
+      <soap12:address location="http://localhost:50578/Journey.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

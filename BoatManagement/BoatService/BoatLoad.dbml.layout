@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 13.5" name="BoatLoad">
+  <DataContextMoniker Name="/BoatLoadDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3bc3c9e4-34d3-490c-90b2-f624ec25ae67" absoluteBounds="0.75, 6.125, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/BoatLoadDataContext/Boat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5cd3abef-8d34-4d7d-93d6-4d8cff9d386a" absoluteBounds="0.765, 6.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4bed7ba0-afc4-4670-9c8c-a41dd571e0e5" absoluteBounds="3.75, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/BoatLoadDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="936d3ef7-d298-4939-98ca-e8c16e50d67e" absoluteBounds="3.765, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57e4d1e6-acd2-4fff-ad7a-6f294b886556" absoluteBounds="3.75, 6.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/BoatLoadDataContext/BoatLostInfor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72444769-a3c2-43e0-ad3e-411480ee4c41" absoluteBounds="3.765, 7.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e924889d-c712-4223-bc8e-71248c88e078" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/BoatLoadDataContext/Journey" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ef04ab1-55e0-4ed1-8ad8-226ef61af068" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3eba247-d3b8-4541-992d-3f81e24d04bf" absoluteBounds="1.5, 11.875, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/BoatLoadDataContext/National" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e6bad6e-fc97-41fb-b39a-df7d24d0bf1e" absoluteBounds="1.5150000000000001, 12.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc1fde40-8504-4d2d-91b0-c51e7e174a27" absoluteBounds="9, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/BoatLoadDataContext/Parameter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4560cf03-27cf-4e93-9a45-701f637a2765" absoluteBounds="9.015, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1853d906-78ab-49d2-bb2e-c0729807c230" absoluteBounds="0.75, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/BoatLoadDataContext/Port" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8633ee40-8fd0-48bf-9241-0cc64e0a821c" absoluteBounds="0.765, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19910dd1-fc51-43ae-8920-6874c46ca1ce" absoluteBounds="6.25, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/BoatLoadDataContext/Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df13752c-4fa8-4c42-98e8-5fb02c765436" absoluteBounds="6.265, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="321cfa54-a456-49a1-816c-cb94a3809b67" absoluteBounds="1.5, 10, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/BoatLoadDataContext/TypeBoat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a1aaf4e-b57c-496f-b372-b503f7feb8f5" absoluteBounds="1.5150000000000001, 10.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.40625); (3.59375 : 6.40625); (3.59375 : 3.34780110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BoatLoadDataContext/Boat/Boat_Journey" />
+      <nodes>
+        <classShapeMoniker Id="3bc3c9e4-34d3-490c-90b2-f624ec25ae67" />
+        <classShapeMoniker Id="e924889d-c712-4223-bc8e-71248c88e078" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 12.5681469726562); (1.1249995 : 12.5681469726562); (1.1249995 : 9.2420068359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BoatLoadDataContext/National/National_Boat" />
+      <nodes>
+        <classShapeMoniker Id="a3eba247-d3b8-4541-992d-3f81e24d04bf" />
+        <classShapeMoniker Id="3bc3c9e4-34d3-490c-90b2-f624ec25ae67" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.10659912109375); (3.5 : 2.10659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BoatLoadDataContext/Port/Port_Journey" />
+      <nodes>
+        <classShapeMoniker Id="1853d906-78ab-49d2-bb2e-c0729807c230" />
+        <classShapeMoniker Id="e924889d-c712-4223-bc8e-71248c88e078" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.55329956054688); (3.5 : 1.55329956054688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BoatLoadDataContext/Port/Port_Journey1" />
+      <nodes>
+        <classShapeMoniker Id="1853d906-78ab-49d2-bb2e-c0729807c230" />
+        <classShapeMoniker Id="e924889d-c712-4223-bc8e-71248c88e078" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.10659912109375); (9 : 2.10659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BoatLoadDataContext/Position/Position_Parameter" />
+      <nodes>
+        <classShapeMoniker Id="19910dd1-fc51-43ae-8920-6874c46ca1ce" />
+        <classShapeMoniker Id="dc1fde40-8504-4d2d-91b0-c51e7e174a27" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.10659912109375); (6.25 : 2.10659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BoatLoadDataContext/Journey/Journey_Position" />
+      <nodes>
+        <classShapeMoniker Id="e924889d-c712-4223-bc8e-71248c88e078" />
+        <classShapeMoniker Id="19910dd1-fc51-43ae-8920-6874c46ca1ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 10); (2.125 : 9.2420068359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BoatLoadDataContext/TypeBoat/TypeBoat_Boat" />
+      <nodes>
+        <classShapeMoniker Id="321cfa54-a456-49a1-816c-cb94a3809b67" />
+        <classShapeMoniker Id="3bc3c9e4-34d3-490c-90b2-f624ec25ae67" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

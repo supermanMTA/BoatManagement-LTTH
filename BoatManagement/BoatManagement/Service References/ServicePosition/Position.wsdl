@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListPosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID_Journey" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPositionResult" type="tns:Position" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Position">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDJourney" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Time" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Oceans" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Journey" type="tns:Journey" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Journey">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BeginPosition" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndPosition" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeProvide" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeBegin" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeEnd" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Boat" type="tns:Boat" />
+          <s:element minOccurs="0" maxOccurs="1" name="Port" type="tns:Port" />
+          <s:element minOccurs="0" maxOccurs="1" name="Port1" type="tns:Port" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Boat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MMSI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDNational" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDTypeBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Volume" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tonnage" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="High" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Length" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="National" type="tns:National" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeBoat" type="tns:TypeBoat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="National">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TypeBoat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Port">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_Nation" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPosition">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPositionResult" type="tns:ArrayOfPosition" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPosition">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Position" nillable="true" type="tns:Position" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IDPo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPoResult" type="tns:Position" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTrip" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPoResult" type="tns:ArrayOfPosition" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idtrip" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="longitude" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="latitude" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="ocean" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePositionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPosition" />
+  </wsdl:message>
+  <wsdl:message name="ListPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPosition" />
+  </wsdl:message>
+  <wsdl:message name="GetPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPo" />
+  </wsdl:message>
+  <wsdl:message name="GetPoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPo" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePosition" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePositionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Position1Soap">
+    <wsdl:operation name="ListPosition">
+      <wsdl:input message="tns:ListPositionSoapIn" />
+      <wsdl:output message="tns:ListPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPosition">
+      <wsdl:input message="tns:GetPositionSoapIn" />
+      <wsdl:output message="tns:GetPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPo">
+      <wsdl:input message="tns:GetPoSoapIn" />
+      <wsdl:output message="tns:GetPoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPo">
+      <wsdl:input message="tns:GetAllPoSoapIn" />
+      <wsdl:output message="tns:GetAllPoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <wsdl:input message="tns:UpdatePositionSoapIn" />
+      <wsdl:output message="tns:UpdatePositionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Position1Soap" type="tns:Position1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListPosition">
+      <soap:operation soapAction="http://tempuri.org/ListPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPosition">
+      <soap:operation soapAction="http://tempuri.org/GetPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPo">
+      <soap:operation soapAction="http://tempuri.org/GetPo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPo">
+      <soap:operation soapAction="http://tempuri.org/GetAllPo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <soap:operation soapAction="http://tempuri.org/UpdatePosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Position1Soap12" type="tns:Position1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListPosition">
+      <soap12:operation soapAction="http://tempuri.org/ListPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPosition">
+      <soap12:operation soapAction="http://tempuri.org/GetPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPo">
+      <soap12:operation soapAction="http://tempuri.org/GetPo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPo">
+      <soap12:operation soapAction="http://tempuri.org/GetAllPo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Position1">
+    <wsdl:port name="Position1Soap" binding="tns:Position1Soap">
+      <soap:address location="http://localhost:50578/Position.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Position1Soap12" binding="tns:Position1Soap12">
+      <soap12:address location="http://localhost:50578/Position.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

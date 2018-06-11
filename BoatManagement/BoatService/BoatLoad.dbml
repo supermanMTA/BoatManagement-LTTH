@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BoatManagement" Class="BoatLoadDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=NGUYENTRINH\SQLEXPRESS;Initial Catalog=BoatManagement;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BoatManagementConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Boat" Member="Boat">
+    <Type Name="Boat">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IMO" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MMSI" Type="System.String" DbType="NChar(9)" CanBeNull="true" />
+      <Column Name="IDNational" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDTypeBoat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Volume" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Tonnage" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="High" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Length" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.Byte[]" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Boat_Journey" Member="Journey" AccessModifier="Internal" ThisKey="ID" OtherKey="IDBoat" Type="Journey" />
+      <Association Name="National_Boat" Member="National" ThisKey="IDNational" OtherKey="ID" Type="National" IsForeignKey="true" />
+      <Association Name="TypeBoat_Boat" Member="TypeBoat" ThisKey="IDTypeBoat" OtherKey="ID" Type="TypeBoat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="User">
+    <Type Name="User">
+      <Column Name="Account" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BoatLostInfor" Member="BoatLostInfor">
+    <Type Name="BoatLostInfor">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LastConnect" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IDJourney" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDBoat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ocean" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Journey" Member="Journey">
+    <Type Name="Journey">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDBoat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BeginPosition" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EndPosition" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeProvide" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TimeBegin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Journey_Position" Member="Position" AccessModifier="Internal" ThisKey="ID" OtherKey="IDJourney" Type="Position" />
+      <Association Name="Boat_Journey" Member="Boat" ThisKey="IDBoat" OtherKey="ID" Type="Boat" IsForeignKey="true" />
+      <Association Name="Port_Journey" Member="Port" ThisKey="BeginPosition" OtherKey="ID" Type="Port" IsForeignKey="true" />
+      <Association Name="Port_Journey1" Member="Port1" ThisKey="EndPosition" OtherKey="ID" Type="Port" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[National]" Member="National">
+    <Type Name="National">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Byte[]" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="National_Boat" Member="Boat" AccessModifier="Internal" ThisKey="ID" OtherKey="IDNational" Type="Boat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Parameter" Member="Parameter">
+    <Type Name="Parameter">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDPosition" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Speed" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Waterlevel" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Wind" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Weather" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Position_Parameter" Member="Position" ThisKey="IDPosition" OtherKey="ID" Type="Position" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Port" Member="Port">
+    <Type Name="Port">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ID_Nation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ocean" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Port_Journey" Member="Journey" AccessModifier="Internal" ThisKey="ID" OtherKey="BeginPosition" Type="Journey" />
+      <Association Name="Port_Journey1" Member="Journey1" AccessModifier="Internal" ThisKey="ID" OtherKey="EndPosition" Type="Journey" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Position" Member="Position">
+    <Type Name="Position">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDJourney" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Oceans" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Position_Parameter" Member="Parameter" AccessModifier="Internal" ThisKey="ID" OtherKey="IDPosition" Type="Parameter" />
+      <Association Name="Journey_Position" Member="Journey" ThisKey="IDJourney" OtherKey="ID" Type="Journey" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TypeBoat" Member="TypeBoat">
+    <Type Name="TypeBoat">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Association Name="TypeBoat_Boat" Member="Boat" AccessModifier="Internal" ThisKey="ID" OtherKey="IDTypeBoat" Type="Boat" />
+    </Type>
+  </Table>
+</Database>

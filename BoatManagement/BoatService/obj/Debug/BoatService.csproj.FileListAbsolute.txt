@@ -1,0 +1,60 @@
+F:\BoatManagement\BoatService\bin\roslyn\csc.exe
+F:\BoatManagement\BoatService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\BoatManagement\BoatService\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\BoatManagement\BoatService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\BoatManagement\BoatService\bin\roslyn\System.Collections.Immutable.dll
+F:\BoatManagement\BoatService\bin\roslyn\System.Reflection.Metadata.dll
+F:\BoatManagement\BoatService\bin\roslyn\vbc.exe
+F:\BoatManagement\BoatService\bin\roslyn\VBCSCompiler.exe
+F:\BoatManagement\BoatService\bin\roslyn\VBCSCompiler.exe.config
+F:\BoatManagement\BoatService\bin\BoatService.dll.config
+F:\BoatManagement\BoatService\bin\BoatService.dll
+F:\BoatManagement\BoatService\bin\BoatService.pdb
+F:\BoatManagement\BoatService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\BoatManagement\BoatService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\BoatManagement\BoatService\obj\Debug\BoatService.csprojResolveAssemblyReference.cache
+F:\BoatManagement\BoatService\obj\Debug\BoatService.dll
+F:\BoatManagement\BoatService\obj\Debug\BoatService.pdb
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\csc.exe
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\vbc.exe
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\BoatService.dll.config
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\BoatService.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\BoatService.pdb
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\obj\Debug\BoatService.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\obj\Debug\BoatService.dll
+C:\Users\Administrator\Desktop\BoatManagement\BoatService\obj\Debug\BoatService.pdb
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\csc.exe
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\System.Collections.Immutable.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\System.Reflection.Metadata.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\vbc.exe
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\VBCSCompiler.exe
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\roslyn\VBCSCompiler.exe.config
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\BoatService.dll.config
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\BoatService.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\BoatService.pdb
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\obj\Debug\BoatService.csprojResolveAssemblyReference.cache
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\obj\Debug\BoatService.dll
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatService\obj\Debug\BoatService.pdb

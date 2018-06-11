@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="parameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID_Position" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="parameterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parameterResult" type="tns:Parameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Parameter">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDPosition" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Speed" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Waterlevel" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Wind" nillable="true" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Weather" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Position" type="tns:Position" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Position">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDJourney" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Time" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Oceans" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Journey" type="tns:Journey" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Journey">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BeginPosition" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndPosition" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeProvide" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeBegin" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeEnd" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Boat" type="tns:Boat" />
+          <s:element minOccurs="0" maxOccurs="1" name="Port" type="tns:Port" />
+          <s:element minOccurs="0" maxOccurs="1" name="Port1" type="tns:Port" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Boat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MMSI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDNational" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IDTypeBoat" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Volume" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tonnage" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="High" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Length" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="National" type="tns:National" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeBoat" type="tns:TypeBoat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="National">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TypeBoat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Port">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_Nation" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertParameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID_Position" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="speed" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="waterlevel" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="wind" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="weather" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertParameterResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="parameterSoapIn">
+    <wsdl:part name="parameters" element="tns:parameter" />
+  </wsdl:message>
+  <wsdl:message name="parameterSoapOut">
+    <wsdl:part name="parameters" element="tns:parameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertParameterSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertParameter" />
+  </wsdl:message>
+  <wsdl:message name="InsertParameterSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertParameterResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceParameterSoap">
+    <wsdl:operation name="parameter">
+      <wsdl:input message="tns:parameterSoapIn" />
+      <wsdl:output message="tns:parameterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertParameter">
+      <wsdl:input message="tns:InsertParameterSoapIn" />
+      <wsdl:output message="tns:InsertParameterSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceParameterSoap" type="tns:ServiceParameterSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="parameter">
+      <soap:operation soapAction="http://tempuri.org/parameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertParameter">
+      <soap:operation soapAction="http://tempuri.org/InsertParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceParameterSoap12" type="tns:ServiceParameterSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="parameter">
+      <soap12:operation soapAction="http://tempuri.org/parameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertParameter">
+      <soap12:operation soapAction="http://tempuri.org/InsertParameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceParameter">
+    <wsdl:port name="ServiceParameterSoap" binding="tns:ServiceParameterSoap">
+      <soap:address location="http://localhost:50578/ServiceParameter.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceParameterSoap12" binding="tns:ServiceParameterSoap12">
+      <soap12:address location="http://localhost:50578/ServiceParameter.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

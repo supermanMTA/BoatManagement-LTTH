@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListNational">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListNationalResult" type="tns:ArrayOfNational" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNational">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="National" nillable="true" type="tns:National" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="National">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListPort">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListPortResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPortResult" type="tns:ArrayOfPort" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPort">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Port" nillable="true" type="tns:Port" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Port">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_Nation" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListPortOfNational">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID_Nationnal" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPortOfNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPortOfNationalResult" type="tns:ArrayOfPort" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNational">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNationalResult" type="tns:National" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPortByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID_port" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPortByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPortByIDResult" type="tns:Port" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNational">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertNationalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNational">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateNationalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteNational">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteNationalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteNationalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPort">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Lat" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="Long" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="national" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPortResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertPortResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePort">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Lat" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="Long" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="national" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ocean" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePortResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePortResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:ListNational" />
+  </wsdl:message>
+  <wsdl:message name="ListNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:ListNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListPortSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPort" />
+  </wsdl:message>
+  <wsdl:message name="ListPortSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPortResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListPortOfNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPortOfNational" />
+  </wsdl:message>
+  <wsdl:message name="ListPortOfNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPortOfNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNational" />
+  </wsdl:message>
+  <wsdl:message name="GetNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPortByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPortByID" />
+  </wsdl:message>
+  <wsdl:message name="GetPortByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPortByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertNational" />
+  </wsdl:message>
+  <wsdl:message name="InsertNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateNational" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteNationalSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteNational" />
+  </wsdl:message>
+  <wsdl:message name="DeleteNationalSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteNationalResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPortSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPort" />
+  </wsdl:message>
+  <wsdl:message name="InsertPortSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPortResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePortSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePort" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePortSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePortResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicePortNationalSoap">
+    <wsdl:operation name="ListNational">
+      <wsdl:input message="tns:ListNationalSoapIn" />
+      <wsdl:output message="tns:ListNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPort">
+      <wsdl:input message="tns:ListPortSoapIn" />
+      <wsdl:output message="tns:ListPortSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPortOfNational">
+      <wsdl:input message="tns:ListPortOfNationalSoapIn" />
+      <wsdl:output message="tns:ListPortOfNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNational">
+      <wsdl:input message="tns:GetNationalSoapIn" />
+      <wsdl:output message="tns:GetNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPortByID">
+      <wsdl:input message="tns:GetPortByIDSoapIn" />
+      <wsdl:output message="tns:GetPortByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNational">
+      <wsdl:input message="tns:InsertNationalSoapIn" />
+      <wsdl:output message="tns:InsertNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNational">
+      <wsdl:input message="tns:UpdateNationalSoapIn" />
+      <wsdl:output message="tns:UpdateNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteNational">
+      <wsdl:input message="tns:DeleteNationalSoapIn" />
+      <wsdl:output message="tns:DeleteNationalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPort">
+      <wsdl:input message="tns:InsertPortSoapIn" />
+      <wsdl:output message="tns:InsertPortSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePort">
+      <wsdl:input message="tns:UpdatePortSoapIn" />
+      <wsdl:output message="tns:UpdatePortSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicePortNationalSoap" type="tns:ServicePortNationalSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListNational">
+      <soap:operation soapAction="http://tempuri.org/ListNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPort">
+      <soap:operation soapAction="http://tempuri.org/ListPort" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPortOfNational">
+      <soap:operation soapAction="http://tempuri.org/ListPortOfNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNational">
+      <soap:operation soapAction="http://tempuri.org/GetNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPortByID">
+      <soap:operation soapAction="http://tempuri.org/GetPortByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNational">
+      <soap:operation soapAction="http://tempuri.org/InsertNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNational">
+      <soap:operation soapAction="http://tempuri.org/UpdateNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteNational">
+      <soap:operation soapAction="http://tempuri.org/DeleteNational" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPort">
+      <soap:operation soapAction="http://tempuri.org/InsertPort" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePort">
+      <soap:operation soapAction="http://tempuri.org/UpdatePort" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicePortNationalSoap12" type="tns:ServicePortNationalSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListNational">
+      <soap12:operation soapAction="http://tempuri.org/ListNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPort">
+      <soap12:operation soapAction="http://tempuri.org/ListPort" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPortOfNational">
+      <soap12:operation soapAction="http://tempuri.org/ListPortOfNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNational">
+      <soap12:operation soapAction="http://tempuri.org/GetNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPortByID">
+      <soap12:operation soapAction="http://tempuri.org/GetPortByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNational">
+      <soap12:operation soapAction="http://tempuri.org/InsertNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNational">
+      <soap12:operation soapAction="http://tempuri.org/UpdateNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteNational">
+      <soap12:operation soapAction="http://tempuri.org/DeleteNational" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPort">
+      <soap12:operation soapAction="http://tempuri.org/InsertPort" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePort">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePort" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePortNational">
+    <wsdl:port name="ServicePortNationalSoap" binding="tns:ServicePortNationalSoap">
+      <soap:address location="http://localhost:50578/ServicePortNational.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicePortNationalSoap12" binding="tns:ServicePortNationalSoap12">
+      <soap12:address location="http://localhost:50578/ServicePortNational.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
