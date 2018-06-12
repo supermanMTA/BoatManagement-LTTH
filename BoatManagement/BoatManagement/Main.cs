@@ -13,9 +13,11 @@ namespace BoatManagement
 {
     public partial class Main : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public Main()
+        string nameaccount;
+        public Main(string Nameaccount )
         {
             InitializeComponent();
+            nameaccount = Nameaccount;
         }
         private void Main_Load(object sender, EventArgs e)
         {
@@ -88,6 +90,21 @@ namespace BoatManagement
             BoatLostInfor uc = new BoatLostInfor();
             uc.Dock = DockStyle.Fill;
             panelMain.Controls.Add(uc);
+        }
+
+     
+
+        private void btnChangePass_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ChangePassword change = new ChangePassword(nameaccount);
+            change.Show();
+        }
+
+        private void btnLogout_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.Hide();
+            Login main = new Login();
+            main.Show();
         }
     }
 }

@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boat));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cbxstatus = new System.Windows.Forms.ComboBox();
             this.cbxNational = new DevExpress.XtraEditors.LookUpEdit();
             this.cbxTypeBoat = new DevExpress.XtraEditors.LookUpEdit();
             this.btnTrip = new DevExpress.XtraEditors.SimpleButton();
@@ -67,7 +68,6 @@
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.imgList = new DevExpress.Utils.ImageCollection(this.components);
-            this.cbxstatus = new System.Windows.Forms.ComboBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbxNational.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTypeBoat.Properties)).BeginInit();
@@ -116,6 +116,17 @@
             this.panel4.Size = new System.Drawing.Size(854, 620);
             this.panel4.TabIndex = 2;
             // 
+            // cbxstatus
+            // 
+            this.cbxstatus.FormattingEnabled = true;
+            this.cbxstatus.Items.AddRange(new object[] {
+            "Work",
+            "Work Off"});
+            this.cbxstatus.Location = new System.Drawing.Point(632, 418);
+            this.cbxstatus.Name = "cbxstatus";
+            this.cbxstatus.Size = new System.Drawing.Size(121, 25);
+            this.cbxstatus.TabIndex = 11;
+            // 
             // cbxNational
             // 
             this.cbxNational.Location = new System.Drawing.Point(632, 200);
@@ -131,7 +142,7 @@
             this.cbxNational.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.cbxNational.Properties.ShowHeader = false;
             this.cbxNational.Size = new System.Drawing.Size(206, 26);
-            this.cbxNational.TabIndex = 25;
+            this.cbxNational.TabIndex = 5;
             // 
             // cbxTypeBoat
             // 
@@ -148,7 +159,7 @@
             this.cbxTypeBoat.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.cbxTypeBoat.Properties.ShowHeader = false;
             this.cbxTypeBoat.Size = new System.Drawing.Size(268, 26);
-            this.cbxTypeBoat.TabIndex = 24;
+            this.cbxTypeBoat.TabIndex = 6;
             // 
             // btnTrip
             // 
@@ -167,35 +178,35 @@
             this.txthigh.Location = new System.Drawing.Point(139, 443);
             this.txthigh.Name = "txthigh";
             this.txthigh.Size = new System.Drawing.Size(220, 24);
-            this.txthigh.TabIndex = 16;
+            this.txthigh.TabIndex = 10;
             // 
             // txtLength
             // 
             this.txtLength.Location = new System.Drawing.Point(632, 340);
             this.txtLength.Name = "txtLength";
             this.txtLength.Size = new System.Drawing.Size(215, 24);
-            this.txtLength.TabIndex = 15;
+            this.txtLength.TabIndex = 9;
             // 
             // txtTonnage
             // 
             this.txtTonnage.Location = new System.Drawing.Point(139, 353);
             this.txtTonnage.Name = "txtTonnage";
             this.txtTonnage.Size = new System.Drawing.Size(220, 24);
-            this.txtTonnage.TabIndex = 14;
+            this.txtTonnage.TabIndex = 8;
             // 
             // txtVolume
             // 
             this.txtVolume.Location = new System.Drawing.Point(636, 268);
             this.txtVolume.Name = "txtVolume";
             this.txtVolume.Size = new System.Drawing.Size(211, 24);
-            this.txtVolume.TabIndex = 13;
+            this.txtVolume.TabIndex = 7;
             // 
             // txtMMSI
             // 
             this.txtMMSI.Location = new System.Drawing.Point(139, 201);
             this.txtMMSI.Name = "txtMMSI";
             this.txtMMSI.Size = new System.Drawing.Size(220, 24);
-            this.txtMMSI.TabIndex = 10;
+            this.txtMMSI.TabIndex = 4;
             // 
             // label3
             // 
@@ -308,7 +319,7 @@
             this.simpleButton3.Location = new System.Drawing.Point(723, 156);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton3.TabIndex = 6;
+            this.simpleButton3.TabIndex = 3;
             this.simpleButton3.Text = "Select Image";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
@@ -317,7 +328,7 @@
             this.txtIMO.Location = new System.Drawing.Point(138, 117);
             this.txtIMO.Name = "txtIMO";
             this.txtIMO.Size = new System.Drawing.Size(194, 24);
-            this.txtIMO.TabIndex = 5;
+            this.txtIMO.TabIndex = 2;
             // 
             // label2
             // 
@@ -333,7 +344,7 @@
             this.txtName.Location = new System.Drawing.Point(138, 49);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(194, 24);
-            this.txtName.TabIndex = 3;
+            this.txtName.TabIndex = 1;
             // 
             // label1
             // 
@@ -469,17 +480,6 @@
             // imgList
             // 
             this.imgList.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imgList.ImageStream")));
-            // 
-            // cbxstatus
-            // 
-            this.cbxstatus.FormattingEnabled = true;
-            this.cbxstatus.Items.AddRange(new object[] {
-            "Work",
-            "Work Off"});
-            this.cbxstatus.Location = new System.Drawing.Point(632, 418);
-            this.cbxstatus.Name = "cbxstatus";
-            this.cbxstatus.Size = new System.Drawing.Size(121, 25);
-            this.cbxstatus.TabIndex = 26;
             // 
             // Boat
             // 

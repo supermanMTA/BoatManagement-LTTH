@@ -149,7 +149,7 @@ namespace BoatManagement.GUI
             }
             catch
             {
-                MessageBox.Show("Định dạng ảnh không phù hợp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Image false", "communication", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -233,6 +233,10 @@ namespace BoatManagement.GUI
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            btnAdd.Enabled = true;
+            btnUpdate.Enabled = true;
+            btnUpdate.Text = "Update";
+            btnAdd.Text = "Add";
             LoadNational();
         }
         #endregion

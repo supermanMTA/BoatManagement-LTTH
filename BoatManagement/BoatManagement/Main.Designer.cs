@@ -41,10 +41,13 @@
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.btnStatisticsByNational = new DevExpress.XtraBars.BarButtonItem();
             this.btnStatisticsByTypeBoat = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLogout = new DevExpress.XtraBars.BarButtonItem();
+            this.btnChangePass = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Account = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.panelMain = new System.Windows.Forms.Panel();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
@@ -68,9 +71,11 @@
             this.barButtonItem11,
             this.barButtonItem12,
             this.btnStatisticsByNational,
-            this.btnStatisticsByTypeBoat});
+            this.btnStatisticsByTypeBoat,
+            this.btnLogout,
+            this.btnChangePass});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 15;
+            this.ribbon.MaxItemId = 17;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -88,7 +93,7 @@
             // 
             // barButtonItem2
             // 
-            this.barButtonItem2.Caption = "Boat are active";
+            this.barButtonItem2.Caption = "Boat are activing";
             this.barButtonItem2.Id = 2;
             this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.LargeWidth = 100;
@@ -106,7 +111,7 @@
             // 
             // barButtonItem7
             // 
-            this.barButtonItem7.Caption = "LostTH";
+            this.barButtonItem7.Caption = "Lost Signal";
             this.barButtonItem7.Id = 7;
             this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
             this.barButtonItem7.LargeWidth = 100;
@@ -178,18 +183,39 @@
             this.btnStatisticsByTypeBoat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnStatisticsByTypeBoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnStatisticsByTypeBoat_ItemClick);
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Caption = "Logout";
+            this.btnLogout.Id = 15;
+            this.btnLogout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.ImageOptions.Image")));
+            this.btnLogout.LargeWidth = 100;
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnLogout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogout_ItemClick);
+            // 
+            // btnChangePass
+            // 
+            this.btnChangePass.Caption = "Change Pasword";
+            this.btnChangePass.Id = 16;
+            this.btnChangePass.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePass.ImageOptions.Image")));
+            this.btnChangePass.LargeWidth = 100;
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnChangePass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChangePass_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
-            this.ribbonPageGroup4});
+            this.ribbonPageGroup4,
+            this.Account});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Boat Management";
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
@@ -209,6 +235,13 @@
             this.ribbonPageGroup4.ItemLinks.Add(this.btnStatisticsByNational);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Statistics";
+            // 
+            // Account
+            // 
+            this.Account.ItemLinks.Add(this.btnChangePass);
+            this.Account.ItemLinks.Add(this.btnLogout);
+            this.Account.Name = "Account";
+            this.Account.Text = "Account";
             // 
             // panelMain
             // 
@@ -295,5 +328,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem btnStatisticsByNational;
         private DevExpress.XtraBars.BarButtonItem btnStatisticsByTypeBoat;
+        private DevExpress.XtraBars.BarButtonItem btnLogout;
+        private DevExpress.XtraBars.BarButtonItem btnChangePass;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup Account;
     }
 }

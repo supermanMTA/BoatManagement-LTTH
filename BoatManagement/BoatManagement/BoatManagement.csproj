@@ -85,6 +85,12 @@
     <Compile Include="GUI\BoatLostInfor.Designer.cs">
       <DependentUpon>BoatLostInfor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FrmJourney.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BoatLostInfor.resx">
       <DependentUpon>BoatLostInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmJourney.resx">
       <DependentUpon>FrmJourney.cs</DependentUpon>
@@ -321,6 +330,15 @@
     </None>
     <None Include="Service References\ServiceJourney\Journey.wsdl" />
     <None Include="Service References\ServiceLogin\BoatManagement.ServiceLogin.CheckLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceLogin\BoatManagement.ServiceLogin.getUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceLogin\BoatManagement.ServiceLogin.updatepassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceLogin\BoatManagement.ServiceLogin.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceLogin\Login.wsdl" />

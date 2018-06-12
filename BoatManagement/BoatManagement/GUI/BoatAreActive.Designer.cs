@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraMap.SizeLegend sizeLegend1 = new DevExpress.XtraMap.SizeLegend();
-            DevExpress.XtraMap.KeyColorColorizer keyColorColorizer1 = new DevExpress.XtraMap.KeyColorColorizer();
-            DevExpress.XtraMap.ArgumentItemKeyProvider argumentItemKeyProvider1 = new DevExpress.XtraMap.ArgumentItemKeyProvider();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.dgvBoat = new DevExpress.XtraGrid.GridControl();
             this.gridBoat = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.map = new DevExpress.XtraMap.MapControl();
-            this.imageTilesLayer1 = new DevExpress.XtraMap.ImageLayer();
-            this.bingMapDataProvider1 = new DevExpress.XtraMap.BingMapDataProvider();
             this.vectorItemsLayer1 = new DevExpress.XtraMap.VectorItemsLayer();
             this.mapItemStorage1 = new DevExpress.XtraMap.MapItemStorage();
+            this.informationLayer1 = new DevExpress.XtraMap.InformationLayer();
+            this.bingSearchDataProvider1 = new DevExpress.XtraMap.BingSearchDataProvider();
+            this.imageLayer1 = new DevExpress.XtraMap.ImageLayer();
+            this.bingMapDataProvider1 = new DevExpress.XtraMap.BingMapDataProvider();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
@@ -76,23 +75,20 @@
             // 
             // map
             // 
-            this.map.CenterPoint = new DevExpress.XtraMap.GeoPoint(15.8D, 106.5D);
             this.map.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.map.Layers.Add(this.imageTilesLayer1);
+            this.map.Layers.Add(this.imageLayer1);
+            this.map.Layers.Add(this.informationLayer1);
             this.map.Layers.Add(this.vectorItemsLayer1);
-            this.map.Legends.Add(sizeLegend1);
             this.map.Location = new System.Drawing.Point(505, 0);
             this.map.Name = "map";
             this.map.Size = new System.Drawing.Size(807, 591);
-            this.map.TabIndex = 4;
-            this.map.ZoomLevel = 3D;
-            this.imageTilesLayer1.DataProvider = this.bingMapDataProvider1;
-            this.bingMapDataProvider1.BingKey = "AlZpmZgk5S20pbDFbqlIvgb43FQnFr8gGdvTtGCTy4C8tg6xqbd09Qw93a-APF8V";
-            keyColorColorizer1.ItemKeyProvider = argumentItemKeyProvider1;
-            keyColorColorizer1.PredefinedColorSchema = DevExpress.XtraMap.PredefinedColorSchema.Palette;
-            this.vectorItemsLayer1.Colorizer = keyColorColorizer1;
+            this.map.TabIndex = 2;
             this.vectorItemsLayer1.Data = this.mapItemStorage1;
             this.vectorItemsLayer1.Name = "VectorLayer";
+            this.vectorItemsLayer1.SelectedItemStyle.Fill = System.Drawing.Color.Red;
+            this.informationLayer1.DataProvider = this.bingSearchDataProvider1;
+            this.imageLayer1.DataProvider = this.bingMapDataProvider1;
+            this.bingMapDataProvider1.BingKey = "AlZpmZgk5S20pbDFbqlIvgb43FQnFr8gGdvTtGCTy4C8tg6xqbd09Qw93a-APF8V";
             // 
             // BoatAreActive
             // 
@@ -117,8 +113,10 @@
         private DevExpress.XtraGrid.GridControl dgvBoat;
         private DevExpress.XtraGrid.Views.Grid.GridView gridBoat;
         private DevExpress.XtraMap.MapControl map;
-        private DevExpress.XtraMap.ImageLayer imageTilesLayer1;
+        private DevExpress.XtraMap.ImageLayer imageLayer1;
         private DevExpress.XtraMap.BingMapDataProvider bingMapDataProvider1;
+        private DevExpress.XtraMap.InformationLayer informationLayer1;
+        private DevExpress.XtraMap.BingSearchDataProvider bingSearchDataProvider1;
         private DevExpress.XtraMap.VectorItemsLayer vectorItemsLayer1;
         private DevExpress.XtraMap.MapItemStorage mapItemStorage1;
     }

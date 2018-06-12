@@ -24,5 +24,25 @@ namespace BoatService
             if (ListUser.Where(p => p.Account == account && p.Password == password).ToList().Count == 0) return false;
             return true;
        }
+
+        [WebMethod]
+        public User getUser(string account) 
+        {
+            return db.User.Where(p => p.Account == account).FirstOrDefault();
+        }
+        [WebMethod]
+        public bool updatepass(string account, string pass)
+        {
+            try
+            {
+                var user = db.User.Where(p => p.Account == account).FirstOrDefault();
+                user.Account = account;
+                user.Password = pass;
+                db.SubmitChanges();
+                return true;
+            }
+            catch { return false; }
+        }
+        
     }
 }

@@ -27,7 +27,7 @@ namespace BoatManagement
             {
                 MessageBox.Show("Login successfully!");
                 this.Hide();
-                Main main = new Main();
+                Main main = new Main(txtAccount.Text);
                 main.Show();
             }
             else MessageBox.Show("Account is falsed");

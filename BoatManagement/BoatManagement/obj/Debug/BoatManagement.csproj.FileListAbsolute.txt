@@ -342,3 +342,4 @@ E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Deb
 E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.StatisticsByTypeBoat.resources
 E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.UpdatePosition.resources
 E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.Login.resources
+E:\GitHub\KY7\KY7\Lập trình tích hợp\BoatManagement\BoatManagement\obj\Debug\BoatManagement.GUI.ChangePassword.resources

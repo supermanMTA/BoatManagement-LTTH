@@ -9,7 +9,70 @@
 //------------------------------------------------------------------------------
 
 namespace BoatManagement.ServiceLogin {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="User", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class User : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AccountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Account {
+            get {
+                return this.AccountField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AccountField, value) != true)) {
+                    this.AccountField = value;
+                    this.RaisePropertyChanged("Account");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceLogin.LoginSoap")]
@@ -21,6 +84,20 @@ namespace BoatManagement.ServiceLogin {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CheckLogin", ReplyAction="*")]
         System.Threading.Tasks.Task<BoatManagement.ServiceLogin.CheckLoginResponse> CheckLoginAsync(BoatManagement.ServiceLogin.CheckLoginRequest request);
+        
+        // CODEGEN: Generating message contract since element name account from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getUser", ReplyAction="*")]
+        BoatManagement.ServiceLogin.getUserResponse getUser(BoatManagement.ServiceLogin.getUserRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getUser", ReplyAction="*")]
+        System.Threading.Tasks.Task<BoatManagement.ServiceLogin.getUserResponse> getUserAsync(BoatManagement.ServiceLogin.getUserRequest request);
+        
+        // CODEGEN: Generating message contract since element name account from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/updatepass", ReplyAction="*")]
+        BoatManagement.ServiceLogin.updatepassResponse updatepass(BoatManagement.ServiceLogin.updatepassRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/updatepass", ReplyAction="*")]
+        System.Threading.Tasks.Task<BoatManagement.ServiceLogin.updatepassResponse> updatepassAsync(BoatManagement.ServiceLogin.updatepassRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -95,6 +172,146 @@ namespace BoatManagement.ServiceLogin {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getUserRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getUser", Namespace="http://tempuri.org/", Order=0)]
+        public BoatManagement.ServiceLogin.getUserRequestBody Body;
+        
+        public getUserRequest() {
+        }
+        
+        public getUserRequest(BoatManagement.ServiceLogin.getUserRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getUserRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string account;
+        
+        public getUserRequestBody() {
+        }
+        
+        public getUserRequestBody(string account) {
+            this.account = account;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getUserResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getUserResponse", Namespace="http://tempuri.org/", Order=0)]
+        public BoatManagement.ServiceLogin.getUserResponseBody Body;
+        
+        public getUserResponse() {
+        }
+        
+        public getUserResponse(BoatManagement.ServiceLogin.getUserResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getUserResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public BoatManagement.ServiceLogin.User getUserResult;
+        
+        public getUserResponseBody() {
+        }
+        
+        public getUserResponseBody(BoatManagement.ServiceLogin.User getUserResult) {
+            this.getUserResult = getUserResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class updatepassRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="updatepass", Namespace="http://tempuri.org/", Order=0)]
+        public BoatManagement.ServiceLogin.updatepassRequestBody Body;
+        
+        public updatepassRequest() {
+        }
+        
+        public updatepassRequest(BoatManagement.ServiceLogin.updatepassRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class updatepassRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string account;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string pass;
+        
+        public updatepassRequestBody() {
+        }
+        
+        public updatepassRequestBody(string account, string pass) {
+            this.account = account;
+            this.pass = pass;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class updatepassResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="updatepassResponse", Namespace="http://tempuri.org/", Order=0)]
+        public BoatManagement.ServiceLogin.updatepassResponseBody Body;
+        
+        public updatepassResponse() {
+        }
+        
+        public updatepassResponse(BoatManagement.ServiceLogin.updatepassResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class updatepassResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool updatepassResult;
+        
+        public updatepassResponseBody() {
+        }
+        
+        public updatepassResponseBody(bool updatepassResult) {
+            this.updatepassResult = updatepassResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface LoginSoapChannel : BoatManagement.ServiceLogin.LoginSoap, System.ServiceModel.IClientChannel {
     }
@@ -147,6 +364,58 @@ namespace BoatManagement.ServiceLogin {
             inValue.Body.account = account;
             inValue.Body.password = password;
             return ((BoatManagement.ServiceLogin.LoginSoap)(this)).CheckLoginAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BoatManagement.ServiceLogin.getUserResponse BoatManagement.ServiceLogin.LoginSoap.getUser(BoatManagement.ServiceLogin.getUserRequest request) {
+            return base.Channel.getUser(request);
+        }
+        
+        public BoatManagement.ServiceLogin.User getUser(string account) {
+            BoatManagement.ServiceLogin.getUserRequest inValue = new BoatManagement.ServiceLogin.getUserRequest();
+            inValue.Body = new BoatManagement.ServiceLogin.getUserRequestBody();
+            inValue.Body.account = account;
+            BoatManagement.ServiceLogin.getUserResponse retVal = ((BoatManagement.ServiceLogin.LoginSoap)(this)).getUser(inValue);
+            return retVal.Body.getUserResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BoatManagement.ServiceLogin.getUserResponse> BoatManagement.ServiceLogin.LoginSoap.getUserAsync(BoatManagement.ServiceLogin.getUserRequest request) {
+            return base.Channel.getUserAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BoatManagement.ServiceLogin.getUserResponse> getUserAsync(string account) {
+            BoatManagement.ServiceLogin.getUserRequest inValue = new BoatManagement.ServiceLogin.getUserRequest();
+            inValue.Body = new BoatManagement.ServiceLogin.getUserRequestBody();
+            inValue.Body.account = account;
+            return ((BoatManagement.ServiceLogin.LoginSoap)(this)).getUserAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        BoatManagement.ServiceLogin.updatepassResponse BoatManagement.ServiceLogin.LoginSoap.updatepass(BoatManagement.ServiceLogin.updatepassRequest request) {
+            return base.Channel.updatepass(request);
+        }
+        
+        public bool updatepass(string account, string pass) {
+            BoatManagement.ServiceLogin.updatepassRequest inValue = new BoatManagement.ServiceLogin.updatepassRequest();
+            inValue.Body = new BoatManagement.ServiceLogin.updatepassRequestBody();
+            inValue.Body.account = account;
+            inValue.Body.pass = pass;
+            BoatManagement.ServiceLogin.updatepassResponse retVal = ((BoatManagement.ServiceLogin.LoginSoap)(this)).updatepass(inValue);
+            return retVal.Body.updatepassResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<BoatManagement.ServiceLogin.updatepassResponse> BoatManagement.ServiceLogin.LoginSoap.updatepassAsync(BoatManagement.ServiceLogin.updatepassRequest request) {
+            return base.Channel.updatepassAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<BoatManagement.ServiceLogin.updatepassResponse> updatepassAsync(string account, string pass) {
+            BoatManagement.ServiceLogin.updatepassRequest inValue = new BoatManagement.ServiceLogin.updatepassRequest();
+            inValue.Body = new BoatManagement.ServiceLogin.updatepassRequestBody();
+            inValue.Body.account = account;
+            inValue.Body.pass = pass;
+            return ((BoatManagement.ServiceLogin.LoginSoap)(this)).updatepassAsync(inValue);
         }
     }
 }

@@ -146,6 +146,10 @@ namespace BoatManagement.GUI
             btnCancel.Enabled = true;
             btnUpdate.Enabled = true;
             cbbBoat.Enabled = false;
+            txtLat.Enabled = false;
+            txtLong.Enabled = false;
+            cbbOcean.Enabled = false;
+            dateTimeLost.Enabled = false;
             BoatLostInfor_Load(sender,e);
         }
     }
