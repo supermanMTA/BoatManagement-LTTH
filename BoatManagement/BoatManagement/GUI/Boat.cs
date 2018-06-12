@@ -454,9 +454,7 @@ namespace BoatManagement.GUI
                 return;
             }
 
-        }
-
-       
+        }      
 
         private void gridBoat_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {

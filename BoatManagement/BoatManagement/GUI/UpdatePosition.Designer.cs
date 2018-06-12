@@ -86,6 +86,7 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Parameter Of Position";
+//            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txtWind
             // 

@@ -80,7 +80,7 @@ namespace BoatManagement.GUI
                     int idbeginPo = (int)cbxBeginpo.EditValue;
                     int idendPo = (int)cbxEndPo.EditValue;
                     float timepro = float.Parse(txtTimeProvide.Text);
-               //     bool status = false;
+               //   bool status = false;
              
                     sv.inserttrip(IDboat, idbeginPo,idendPo , timepro, dateTimeBegin.Value, dateTimeEnd.Value, status);
                     if (status == false)

@@ -104,6 +104,25 @@ namespace BoatService
                 get;
             }
         }
+
+        public struct Statictics
+        {
+            public string name { get; set; }
+        //    public int count { get; set; }
+            public List<Boat> BoatOcean { get; set; }
+        }
+
+   //     [WebMethod]
+        //public List<Statictics> GetBoatOcean()
+        //{
+        //    var x = from p in BoatAreActive()
+        //            group p by p.Ocean into g
+        //            select new Statictics()
+        //            {
+        //                name=g.Key,
+        //                BoatOcean=g.ToList()
+        //            };
+        //}
         [WebMethod]
         
         public List<BoatActive> BoatAreActive()

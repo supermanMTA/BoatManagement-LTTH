@@ -30,7 +30,11 @@ namespace BoatManagement
                 Main main = new Main(txtAccount.Text);
                 main.Show();
             }
-            else MessageBox.Show("Account is falsed");
+            else
+            {
+                MessageBox.Show("Account is falsed! "); txtAccount.Text = ""; txtPassword.Text = "";
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)

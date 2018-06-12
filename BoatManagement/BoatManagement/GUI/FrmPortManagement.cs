@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BoatManagement.ServiceNational;
 using BoatManagement.ServiceBoat;
 using DevExpress.XtraMap;
+using System.Text.RegularExpressions;
 
 namespace BoatManagement.GUI
 {
@@ -28,7 +29,7 @@ namespace BoatManagement.GUI
             LoadUnitControl();
             LockControl();
         }
-
+        #region Hàm chức năng
         private void LoaddgvPort()
         {
             var sv = new ServicePortNationalSoapClient();
@@ -37,7 +38,7 @@ namespace BoatManagement.GUI
                             {
                                 ID = p.ID,
                                 Name = p.Name,
-                                Natinal = sv.GetNational((int)p.ID_Nation).Name,
+                                Nationnal = sv.GetNational((int)p.ID_Nation).Name,
                                 Latitude = p.Latitude,
                                 Longitude = p.Longitude
                             }).ToList();
@@ -74,7 +75,21 @@ namespace BoatManagement.GUI
             cbbOceanOfPort.Enabled = false;
         }
 
+        public bool IsNumber(string pText) //kiểm tra xem string là int hay float không
+        {
+            Regex regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$");
+            return regex.IsMatch(pText);
+        }
 
+        private bool check()
+        {
+            if (txtLat.Text == "" || IsNumber(txtLat.Text) == false) { MessageBox.Show("Latitude of position is false"); return false; }
+            else if (txtLongiude.Text == "" || IsNumber(txtLongiude.Text) == false) { MessageBox.Show("Longitude of position is false"); return false; }
+            else return true;
+        }
+        #endregion
+
+        #region Sự kiện
         private void gridPort_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             var sv = new ServicePortNationalSoapClient();
@@ -108,36 +123,36 @@ namespace BoatManagement.GUI
             {
                 btnUpdate.Enabled = false;
                 btnAdd.Text = "Save";
-             //   btnCancel.Text = "Delete";
+             // btnCancel.Text = "Delete";
                 UnLockControl();
-                panel1.Enabled = true;
+                txtLat.Text = "";
+                txtLongiude.Text = "";
+                txtName.Text = "";
+
+           //   panel1.Enabled = true;
                 return;
             }
 
             if (btnAdd.Text == "Save")
             {
-            
-                if (txtName.Text == "" || txtLongiude.Text == "" || txtLat.Text == "")
+                if (check() == true)
                 {
-                    MessageBox.Show("You must enter all fields", "notification");
-                    return;
-                }
-                else
-                {
+
                     // panel1.Enabled = false;
                     btnAdd.Text = "Add";
                     btnUpdate.Enabled = true;
                     LockControl();
-                  //  Port port = new Port();
+                    //  Port port = new Port();
                     double Latitude = Convert.ToDouble(txtLat.Text);
                     double Longitude = Convert.ToDouble(txtLongiude.Text);
                     int ID_Nation = Convert.ToInt32(cbbNational.SelectedValue);
                     string Ocean = cbbOceanOfPort.Text;
                     string Name = txtName.Text;
-                    sv.InsertPort(Name, (float)Latitude,(float) Longitude, ID_Nation, Ocean);
+                    sv.InsertPort(Name, (float)Latitude, (float)Longitude, ID_Nation, Ocean);
                     MessageBox.Show("Add suceed!");
-                    FrmPortManagement_Load(sender,e);
+                    FrmPortManagement_Load(sender, e);
                 }
+                
             }
 
             
@@ -161,22 +176,25 @@ namespace BoatManagement.GUI
 
             if (btnUpdate.Text == "Save")
             {
-
-                btnUpdate.Text = "Update";
                 
-                btnAdd.Enabled = true;
-                LockControl();
-         
-                int id = (int)gridPort.GetFocusedRowCellValue("ID");
-             
-                double Latitude = Convert.ToDouble(txtLat.Text);
-                double Longitude = Convert.ToDouble(txtLongiude.Text);
-                int ID_Nation = Convert.ToInt32(cbbNational.SelectedValue);
-                string Ocean = cbbOceanOfPort.Text;
-                string Name = txtName.Text;
-                sv.UpdatePort(id, Name, (float)Latitude, (float)Longitude, ID_Nation, Ocean);
-                MessageBox.Show("Update succeed!");
-                FrmPortManagement_Load(sender, e);
+                if (check() == true)
+                {
+                    btnUpdate.Text = "Update";
+
+                    btnAdd.Enabled = true;
+                    LockControl();
+
+                    int id = (int)gridPort.GetFocusedRowCellValue("ID");
+
+                    double Latitude = Convert.ToDouble(txtLat.Text);
+                    double Longitude = Convert.ToDouble(txtLongiude.Text);
+                    int ID_Nation = Convert.ToInt32(cbbNational.SelectedValue);
+                    string Ocean = cbbOceanOfPort.Text;
+                    string Name = txtName.Text;
+                    sv.UpdatePort(id, Name, (float)Latitude, (float)Longitude, ID_Nation, Ocean);
+                    MessageBox.Show("Update succeed!");
+                    FrmPortManagement_Load(sender, e);
+                }
 
             }
         }
@@ -188,8 +206,8 @@ namespace BoatManagement.GUI
             btnCancel.Text = "Cancel";
             btnAdd.Enabled = true;
             btnUpdate.Enabled = true;
-            LockControl();        
-            LoaddgvPort();
+            FrmPortManagement_Load(sender,e);
         }
+        #endregion
     }
 }

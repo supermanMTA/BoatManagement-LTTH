@@ -14,6 +14,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace BoatManagement.GUI
 {
+  
     public partial class StatisticsByOcean : UserControl
     {
         public StatisticsByOcean()
@@ -56,7 +57,8 @@ namespace BoatManagement.GUI
                                             
                                         }).ToList();
 
-            var list = InforBoatActive.GroupBy(p => p.Oceans).Select(p => new { STT=j++,Name = p.Key, count = p.Count() });
+            var list = InforBoatActive.GroupBy(p => p.Oceans).Select(p => new { STT = j++, Name = p.Key, count = p.Count() });
+            
             int tong= InforBoatActive.Count();
             dgvOcean.DataSource = list;
             chartThongKe.DataSource = list;

@@ -97,7 +97,7 @@ namespace BoatManagement
         private void btnChangePass_ItemClick(object sender, ItemClickEventArgs e)
         {
             ChangePassword change = new ChangePassword(nameaccount);
-            change.Show();
+            change.ShowDialog();
         }
 
         private void btnLogout_ItemClick(object sender, ItemClickEventArgs e)

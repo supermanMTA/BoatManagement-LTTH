@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using BoatManagement.ServiceBoatLostInfor;
 using BoatManagement.ServiceBoat;
 using System.IO;
+using System.Text.RegularExpressions;
+
 namespace BoatManagement.GUI
 {
     public partial class BoatLostInfor : UserControl
@@ -18,7 +20,7 @@ namespace BoatManagement.GUI
         {
             InitializeComponent();
         }
-
+        #region Sự kiện
         private void BoatLostInfor_Load(object sender, EventArgs e)
         {
             var sv = new ServiceBoatSoapClient();
@@ -40,7 +42,7 @@ namespace BoatManagement.GUI
             
         }
 
-       private void LoadInitControl()
+        private void LoadInitControl()
         {
             var sv = new ServiceBoatSoapClient();
             var list=sv.BoatAreActive();
@@ -105,6 +107,12 @@ namespace BoatManagement.GUI
 
         }
 
+        public bool IsNumber(string pText) //kiểm tra xem string là int hay float không
+        {
+            Regex regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$");
+            return regex.IsMatch(pText);
+        }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (btnUpdate.Text == "Update")
@@ -119,6 +127,8 @@ namespace BoatManagement.GUI
             }
             else
             {
+                if (txtLat.Text == "" || txtLong.Text == "" || cbbOcean.Text == "") { MessageBox.Show("Not enough information"); }
+                else if (IsNumber(txtLat.Text) == false || IsNumber(txtLong.Text) == false) MessageBox.Show("Information is false");
                 try
                 {
                     txtLat.Enabled = false;
@@ -152,5 +162,9 @@ namespace BoatManagement.GUI
             dateTimeLost.Enabled = false;
             BoatLostInfor_Load(sender,e);
         }
+
+        #endregion
+
+      
     }
 }

@@ -115,7 +115,7 @@
             this.txtName.Location = new System.Drawing.Point(168, 3);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(227, 20);
-            this.txtName.TabIndex = 12;
+            this.txtName.TabIndex = 1;
             // 
             // cbbNational
             // 
@@ -123,7 +123,7 @@
             this.cbbNational.Location = new System.Drawing.Point(424, 48);
             this.cbbNational.Name = "cbbNational";
             this.cbbNational.Size = new System.Drawing.Size(121, 21);
-            this.cbbNational.TabIndex = 11;
+            this.cbbNational.TabIndex = 3;
             // 
             // cbbOceanOfPort
             // 
@@ -137,21 +137,21 @@
             this.cbbOceanOfPort.Location = new System.Drawing.Point(424, 94);
             this.cbbOceanOfPort.Name = "cbbOceanOfPort";
             this.cbbOceanOfPort.Size = new System.Drawing.Size(121, 21);
-            this.cbbOceanOfPort.TabIndex = 8;
+            this.cbbOceanOfPort.TabIndex = 5;
             // 
             // txtLongiude
             // 
             this.txtLongiude.Location = new System.Drawing.Point(128, 94);
             this.txtLongiude.Name = "txtLongiude";
             this.txtLongiude.Size = new System.Drawing.Size(100, 20);
-            this.txtLongiude.TabIndex = 6;
+            this.txtLongiude.TabIndex = 4;
             // 
             // txtLat
             // 
             this.txtLat.Location = new System.Drawing.Point(128, 50);
             this.txtLat.Name = "txtLat";
             this.txtLat.Size = new System.Drawing.Size(100, 20);
-            this.txtLat.TabIndex = 5;
+            this.txtLat.TabIndex = 2;
             // 
             // label5
             // 

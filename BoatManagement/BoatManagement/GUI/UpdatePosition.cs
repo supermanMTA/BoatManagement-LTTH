@@ -44,7 +44,7 @@ namespace BoatManagement.GUI
           //  check();
             if ( txtLongitude.Text == "" || txLatitude.Text == "" || txtspeed.Text == "" || txtWeather.Text == "" || txtWater.Value.ToString() == null || txtWind.Value.ToString() == ""|| comboBoxOcean.Text=="")
             {
-                MessageBox.Show("Not enought information");
+                MessageBox.Show("Not enough information");
             }
             else
             {
@@ -57,5 +57,7 @@ namespace BoatManagement.GUI
             }
 
         }
+
+       
     }
 }

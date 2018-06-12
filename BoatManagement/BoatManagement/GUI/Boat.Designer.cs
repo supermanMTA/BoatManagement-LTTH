@@ -68,6 +68,11 @@
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.imgList = new DevExpress.Utils.ImageCollection(this.components);
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbxNational.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxTypeBoat.Properties)).BeginInit();
@@ -90,6 +95,11 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.cbxstatus);
             this.panel4.Controls.Add(this.cbxNational);
             this.panel4.Controls.Add(this.cbxTypeBoat);
@@ -124,7 +134,7 @@
             "Work Off"});
             this.cbxstatus.Location = new System.Drawing.Point(632, 418);
             this.cbxstatus.Name = "cbxstatus";
-            this.cbxstatus.Size = new System.Drawing.Size(121, 25);
+            this.cbxstatus.Size = new System.Drawing.Size(150, 25);
             this.cbxstatus.TabIndex = 11;
             // 
             // cbxNational
@@ -158,7 +168,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbxTypeBoat.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.cbxTypeBoat.Properties.ShowHeader = false;
-            this.cbxTypeBoat.Size = new System.Drawing.Size(268, 26);
+            this.cbxTypeBoat.Size = new System.Drawing.Size(220, 26);
             this.cbxTypeBoat.TabIndex = 6;
             // 
             // btnTrip
@@ -177,28 +187,28 @@
             // 
             this.txthigh.Location = new System.Drawing.Point(139, 443);
             this.txthigh.Name = "txthigh";
-            this.txthigh.Size = new System.Drawing.Size(220, 24);
+            this.txthigh.Size = new System.Drawing.Size(142, 24);
             this.txthigh.TabIndex = 10;
             // 
             // txtLength
             // 
             this.txtLength.Location = new System.Drawing.Point(632, 340);
             this.txtLength.Name = "txtLength";
-            this.txtLength.Size = new System.Drawing.Size(215, 24);
+            this.txtLength.Size = new System.Drawing.Size(151, 24);
             this.txtLength.TabIndex = 9;
             // 
             // txtTonnage
             // 
             this.txtTonnage.Location = new System.Drawing.Point(139, 353);
             this.txtTonnage.Name = "txtTonnage";
-            this.txtTonnage.Size = new System.Drawing.Size(220, 24);
+            this.txtTonnage.Size = new System.Drawing.Size(142, 24);
             this.txtTonnage.TabIndex = 8;
             // 
             // txtVolume
             // 
             this.txtVolume.Location = new System.Drawing.Point(636, 268);
             this.txtVolume.Name = "txtVolume";
-            this.txtVolume.Size = new System.Drawing.Size(211, 24);
+            this.txtVolume.Size = new System.Drawing.Size(147, 24);
             this.txtVolume.TabIndex = 7;
             // 
             // txtMMSI
@@ -481,6 +491,50 @@
             // 
             this.imgList.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imgList.ImageStream")));
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(305, 355);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 17);
+            this.label11.TabIndex = 19;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(790, 343);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(19, 17);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "m";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(305, 443);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(19, 17);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "m";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(311, 356);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(30, 17);
+            this.label15.TabIndex = 23;
+            this.label15.Text = "Ton";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(790, 271);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(31, 17);
+            this.label16.TabIndex = 24;
+            this.label16.Text = "feet";
+            // 
             // Boat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,5 +601,10 @@
         private DevExpress.XtraEditors.LookUpEdit cbxTypeBoat;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private System.Windows.Forms.ComboBox cbxstatus;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }
